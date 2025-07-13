@@ -1,0 +1,41 @@
+{
+    "board_name": "{{YOUR_PROJECT_NAME}}",
+    "markdown_file": "{{YOUR_MARKDOWN_FILE}}.md",
+    "labels": [
+        {"name": "{{LABEL_1_NAME}}", "color": "{{LABEL_1_COLOR}}"},
+        {"name": "{{LABEL_2_NAME}}", "color": "{{LABEL_2_COLOR}}"},
+        {"name": "{{LABEL_3_NAME}}", "color": "{{LABEL_3_COLOR}}"},
+        {"name": "{{LABEL_4_NAME}}", "color": "{{LABEL_4_COLOR}}"},
+        {"name": "{{LABEL_5_NAME}}", "color": "{{LABEL_5_COLOR}}"},
+        {"name": "{{LABEL_6_NAME}}", "color": "{{LABEL_6_COLOR}}"},
+        {"name": "{{LABEL_7_NAME}}", "color": "{{LABEL_7_COLOR}}"},
+        {"name": "{{LABEL_8_NAME}}", "color": "{{LABEL_8_COLOR}}"},
+        {"name": "{{LABEL_9_NAME}}", "color": "{{LABEL_9_COLOR}}"},
+        {"name": "{{LABEL_10_NAME}}", "color": "{{LABEL_10_COLOR}}"}
+    ],
+    "lists": [
+        {"name": "{{LIST_1_NAME}}", "pos": "top"},
+        {"name": "{{LIST_2_NAME}}", "pos": "bottom"},
+        {"name": "{{LIST_3_NAME}}", "pos": "bottom"},
+        {"name": "{{LIST_4_NAME}}", "pos": "bottom"},
+        {"name": "{{LIST_5_NAME}}", "pos": "bottom"}
+    ],
+    "categorization_rules": {
+        "{{LABEL_1_NAME}}": ["{{KEYWORD_1_1}}", "{{KEYWORD_1_2}}", "{{KEYWORD_1_3}}"],
+        "{{LABEL_2_NAME}}": ["{{KEYWORD_2_1}}", "{{KEYWORD_2_2}}", "{{KEYWORD_2_3}}"],
+        "{{LABEL_3_NAME}}": ["{{KEYWORD_3_1}}", "{{KEYWORD_3_2}}", "{{KEYWORD_3_3}}"],
+        "{{LABEL_4_NAME}}": ["{{KEYWORD_4_1}}", "{{KEYWORD_4_2}}", "{{KEYWORD_4_3}}"],
+        "{{LABEL_5_NAME}}": ["{{KEYWORD_5_1}}", "{{KEYWORD_5_2}}", "{{KEYWORD_5_3}}"],
+        "{{LABEL_6_NAME}}": ["{{KEYWORD_6_1}}", "{{KEYWORD_6_2}}", "{{KEYWORD_6_3}}"],
+        "{{LABEL_7_NAME}}": ["{{KEYWORD_7_1}}", "{{KEYWORD_7_2}}", "{{KEYWORD_7_3}}"],
+        "{{LABEL_8_NAME}}": ["{{KEYWORD_8_1}}", "{{KEYWORD_8_2}}", "{{KEYWORD_8_3}}"],
+        "{{LABEL_9_NAME}}": ["{{KEYWORD_9_1}}", "{{KEYWORD_9_2}}", "{{KEYWORD_9_3}}"],
+        "{{LABEL_10_NAME}}": ["{{KEYWORD_10_1}}", "{{KEYWORD_10_2}}", "{{KEYWORD_10_3}}"]
+    },
+    "list_mapping": {
+        "completed": "{{COMPLETED_TASKS_LIST}}",
+        "in_progress": "{{IN_PROGRESS_TASKS_LIST}}",
+        "todo": "{{TODO_TASKS_LIST}}",
+        "backlog": "{{BACKLOG_TASKS_LIST}}"
+    }
+}

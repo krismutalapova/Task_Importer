@@ -1,0 +1,55 @@
+{
+    "_comment": "TEMPLATE CONFIGURATION FILE - Replace all {{VARIABLES}} with your actual values",
+    "_instructions": {
+        "board_name": "Replace with your project name",
+        "markdown_file": "Replace with your markdown file name (without .md extension if using relative path)",
+        "labels": "Customize colors: red, orange, yellow, green, blue, purple, pink, sky, lime, black",
+        "lists": "Common workflows: Kanban (To Do, Doing, Done), Scrum (Backlog, Sprint, In Progress, Review, Done)",
+        "categorization_rules": "Add keywords that will trigger each label assignment",
+        "list_mapping": "Map completion status to your list names"
+    },
+    
+    "board_name": "My Awesome Project",
+    "markdown_file": "my-project-plan.md",
+    
+    "labels": [
+        {"name": "Setup", "color": "green"},
+        {"name": "Backend", "color": "blue"},
+        {"name": "Frontend", "color": "purple"},
+        {"name": "Database", "color": "yellow"},
+        {"name": "API", "color": "orange"},
+        {"name": "Security", "color": "red"},
+        {"name": "Testing", "color": "lime"},
+        {"name": "DevOps", "color": "black"},
+        {"name": "Documentation", "color": "sky"},
+        {"name": "Bug Fix", "color": "pink"}
+    ],
+    
+    "lists": [
+        {"name": "Backlog", "pos": "top"},
+        {"name": "To Do", "pos": "bottom"},
+        {"name": "In Progress", "pos": "bottom"},
+        {"name": "Review", "pos": "bottom"},
+        {"name": "Done", "pos": "bottom"}
+    ],
+    
+    "categorization_rules": {
+        "Setup": ["setup", "install", "configure", "initialize", "environment", "dependencies"],
+        "Backend": ["server", "backend", "api", "service", "controller", "middleware"],
+        "Frontend": ["ui", "frontend", "component", "interface", "design", "styling"],
+        "Database": ["database", "schema", "migration", "model", "query", "sql"],
+        "API": ["api", "endpoint", "rest", "graphql", "webhook", "integration"],
+        "Security": ["security", "auth", "login", "permission", "encrypt", "vulnerability"],
+        "Testing": ["test", "testing", "unit", "integration", "e2e", "coverage"],
+        "DevOps": ["deploy", "docker", "ci/cd", "pipeline", "monitoring", "infrastructure"],
+        "Documentation": ["documentation", "readme", "guide", "manual", "comments"],
+        "Bug Fix": ["fix", "bug", "issue", "error", "debug", "patch"]
+    },
+    
+    "list_mapping": {
+        "completed": "Done",
+        "in_progress": "In Progress", 
+        "todo": "To Do",
+        "backlog": "Backlog"
+    }
+}
