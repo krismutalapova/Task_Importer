@@ -5,6 +5,10 @@ import json
 import argparse
 import requests
 from typing import List, Dict, Tuple, Optional
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 __version__ = "1.0.0"
 
@@ -206,13 +210,20 @@ class TrelloAPI:
             print("1. Go to https://trello.com/app-key")
             print("2. Copy your API Key")
             print("3. Generate a Token and copy it")
-            print("4. Run these commands (replace with your actual values):")
+            print("4. Create a .env file in this directory with:")
+            print("   TRELLO_KEY=your_api_key_here")
+            print("   TRELLO_TOKEN=your_token_here")
+            print("5. Or set environment variables in the terminal:")
             print("   export TRELLO_KEY=your_api_key_here")
             print("   export TRELLO_TOKEN=your_token_here")
-            print("5. Run the script again in the same terminal")
+            print("6. Run the script again")
+            print("")
+            print(
+                "💡 Tip: Copy .env.example to .env and edit it with your credentials, but do not set your credentials in .env.example file."
+            )
             print("")
             raise ValueError(
-                "Please set TRELLO_KEY and TRELLO_TOKEN environment variables"
+                "Please set TRELLO_KEY and TRELLO_TOKEN environment variables or create a .env file"
             )
 
     def create_board(self, name: str) -> str:
