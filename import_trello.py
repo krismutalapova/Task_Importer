@@ -304,9 +304,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Create Trello board from markdown checklist"
     )
-    parser.add_argument(
-        "-f", "--file", default="project_plan.md", help="Markdown file path"
-    )
+    parser.add_argument("-f", "--file", required=True, help="Markdown file path")
     parser.add_argument("-b", "--board-name", help="Board name")
     parser.add_argument(
         "-d", "--dry-run", action="store_true", help="Show what would be created"
