@@ -15,9 +15,13 @@ api_keys.txt
 
 # Personal project files with real data
 my-*
+my-*/
 personal-*
+personal-*/
 real-*
+real-*/
 private-*
+private-*/
 
 # =====================================
 # PYTHON
@@ -266,14 +270,17 @@ __pycache__/
 # =====================================
 
 # Keep the template and example files:
-# !template-*.md
-# !example-*.md
-# !sample-*.md
+!template-*.md
+!example-*.md
+!sample-*.md
 
 # Keep the template and example JSON files:
-# !template-*.json
-# !example-*.json
-# !sample-*.json
+!template-*.json
+!example-*.json
+!sample-*.json
+!*template*.json
+!*example*.json
+!*sample*.json
 
 # =====================================
 # NOTES & TEMPORARY FILES
