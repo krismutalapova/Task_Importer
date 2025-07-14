@@ -61,7 +61,19 @@ cp templates/config-template.json my-config.json
    - Copy your API Key
    - Generate a Token
 
-3. **Set environment variables:**
+3. **Set up credentials (choose one method):**
+   
+   **Method 1: .env file (Recommended)**
+   ```bash
+   # Copy the example file
+   cp .env.example .env
+   
+   # Edit .env with your credentials
+   # TRELLO_KEY=your_api_key_here
+   # TRELLO_TOKEN=your_token_here
+   ```
+   
+   **Method 2: Environment variables**
    ```bash
    export TRELLO_KEY="your_api_key_here"
    export TRELLO_TOKEN="your_token_here"
